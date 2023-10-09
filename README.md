@@ -42,6 +42,8 @@ The dataset in the paper is collected from official and open-source sources. We 
 
 # 2. Analysis and Results
 
+We  provide the code used for analysis alongside the results for the complete reproducibility of our study.
+
 ## Setup Instructions
 
 1. **Clone the Repository:**
@@ -74,7 +76,7 @@ The dataset in the paper is collected from official and open-source sources. We 
     jupyter notebook
     ```
 
-We  provide the code used for analysis alongside the results for the complete reproducibility of our study. Our code consists of five sets of experiments:
+Our code consists of five sets of experiments:
 
  1. [Support-Lists](./Code/1-Support-Lists.ipynb): This code includes the statistics about the support lists given in Section 3B. It is also used to extract the support type and support timeline of the devices, which is later used for evaluating the impact of the support type presented in Section 6A. 
  2. [Supported-Period](./Code/2-Part-1-Supported-Period.ipynb): This code includes the dataset stats reported in Section 3A and the results of the supported period analysis given in Section 4A.
