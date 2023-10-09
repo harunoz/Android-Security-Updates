@@ -42,10 +42,28 @@ The dataset in the paper is collected from official and open-source sources. We 
 
 # 2. Analysis and Results
 
-**Prerequisite Installations**: Ensure you have [**Jupyter Notebook**](https://jupyter.org/install) installed, and Python modules such as **Pandas**, **Numpy**, and others specified for each script.  
+## Setup Instructions
 
-**Download**: For the NIST CVE dataset used in the unpatched analysis section, we refer to [the original website](https://nvd.nist.gov/vuln/data-feeds), in which the dataset can be directly downloaded. (Download the JSON files of all years under the [/Data/NIST-all/](./Data/NIST-all/) folder.)
-
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/Android-Security-Updates.git
+   cd Android-Security-Updates
+2. **Run the CVE Download Script:**
+   ```bash
+    chmod +x Code/download_cve.sh
+    ./Code/download_cve.sh
+3. **Create a Python Virtual Environment:**
+   ```bash
+    python3 -m venv Android-Security-Updates-env
+4. **Activate the Virtual Environment:**
+   ```bash
+    source Android-Security-Updates-env/bin/activate   
+5. **Install the Required Dependencies:**
+   ```bash
+    pip3 install -r requirements.txt
+6. **Launch Jupyter Notebook:**
+   ```bash
+    jupyter notebook
 We  provide the code used for analysis alongside the results for the complete reproducibility of our study. Our code consists of five sets of experiments:
 
  1. [Support-Lists](./Code/1-Support-Lists.ipynb): This code includes the statistics about the support lists given in Section 3B. It is also used to extract the support type and support timeline of the devices, which is later used for evaluating the impact of the support type presented in Section 6A. 
