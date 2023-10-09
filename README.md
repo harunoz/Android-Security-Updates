@@ -46,24 +46,34 @@ The dataset in the paper is collected from official and open-source sources. We 
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/Android-Security-Updates.git
-   cd Android-Security-Updates
-2. **Run the CVE Download Script:**
+   git clone https://github.com/andsec87/Android-Security-Updates.git
+   ```
    ```bash
+   cd Android-Security-Updates
+   ```
+2. **Run the CVE Download Script:**
+    ```bash
     chmod +x Code/download_cve.sh
+    ``` 
+    ```bash
     ./Code/download_cve.sh
+    ```
 3. **Create a Python Virtual Environment:**
    ```bash
     python3 -m venv Android-Security-Updates-env
-4. **Activate the Virtual Environment:**
+    ```
    ```bash
-    source Android-Security-Updates-env/bin/activate   
-5. **Install the Required Dependencies:**
+    source Android-Security-Updates-env/bin/activate
+    ```   
+4. **Install the Required Dependencies:**
    ```bash
     pip3 install -r requirements.txt
+    ```
 6. **Launch Jupyter Notebook:**
    ```bash
     jupyter notebook
+    ```
+
 We  provide the code used for analysis alongside the results for the complete reproducibility of our study. Our code consists of five sets of experiments:
 
  1. [Support-Lists](./Code/1-Support-Lists.ipynb): This code includes the statistics about the support lists given in Section 3B. It is also used to extract the support type and support timeline of the devices, which is later used for evaluating the impact of the support type presented in Section 6A. 
